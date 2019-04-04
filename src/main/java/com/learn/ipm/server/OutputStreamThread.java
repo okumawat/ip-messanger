@@ -26,7 +26,7 @@ public class OutputStreamThread implements Runnable {
 		while(write) {
 			String str = sc.nextLine();
 			try {
-				writer.write(str);
+				writer.write(str+"\n");
 				writer.flush();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
