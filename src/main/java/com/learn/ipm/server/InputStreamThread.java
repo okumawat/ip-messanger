@@ -17,7 +17,6 @@ public class InputStreamThread implements Runnable {
 
 	@Override
 	public void run() {
-		byte[] bytes = new byte[1024];
 		boolean read=true;
 		BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 		while(read) {
